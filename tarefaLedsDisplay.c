@@ -216,7 +216,7 @@ int main()
         cor = !cor;
 
         scanf("%c",&character1);
-        if(character1 >= 48 && character1 <= 57 || character1 >= 65 && character1 <= 90)
+        if(character1 >= 48 && character1 <= 57 || character1 >= 65 && character1 <= 90  || character1 >= 97 && character1 <= 122)
             character2 = character1;
 
         // Mostra, na matriz de LEDs, o dígito decimal digitado no teclado
