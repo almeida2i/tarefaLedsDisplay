@@ -10,4 +10,4 @@ Pressione o Botão B da placa BitDogLab para que o LED RGB contido nesta placa a
 Por meio do terminal serial do VS Code, digite um caractere alfanumérico de cada vez no teclado do computador.
 
 
-Vídeo:
+Vídeo: https://youtu.be/SnpShPgy0KQ

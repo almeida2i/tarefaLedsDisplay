@@ -133,6 +133,7 @@ void gpio_irq_callback(uint gpio, uint32_t event_mask){
         pwm_set_gpio_level(LED_RGB_GREEN,green_led*0x0fff); // Atualiza o estado do LED verde
         ssd1306_fill(&ssd, false); // Limpa o display
         ssd1306_send_data(&ssd);
+        ssd1306_fill(&ssd, !cor);
         ssd1306_rect(&ssd, 3, 3, 122, 58, cor, !cor); // Desenha um retângulo
         ssd1306_draw_string(&ssd, "LED   VERDE", 8, 10); // Desenha uma string
         if(green_led)
@@ -149,6 +150,7 @@ void gpio_irq_callback(uint gpio, uint32_t event_mask){
         pwm_set_gpio_level(LED_RGB_BLUE,blue_led*0x1fff);
         ssd1306_fill(&ssd, false); // Limpa o display
         ssd1306_send_data(&ssd);
+        ssd1306_fill(&ssd, !cor);
         ssd1306_rect(&ssd, 3, 3, 122, 58, cor, !cor); // Desenha um retângulo
         ssd1306_draw_string(&ssd, "LED   AZUL", 8, 10); // Desenha uma string
         if(blue_led)
